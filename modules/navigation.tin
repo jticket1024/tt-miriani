@@ -1,0 +1,69 @@
+#NOP movement macros
+#macro {\eOP}
+{
+#if {"$movemode" == "walk"}
+{
+#variable {movemode} {fly};
+#showme {Your secondary movement keys are set for flight.}
+};
+#elseif {"$movemode" == "fly"}
+{
+#variable {movemode} {walk};
+#showme {Your secondary movement keys are set for walking.}
+}
+}
+#macro {\eu} 
+{
+#if {"$movemode" == "fly"} {7};
+#elseif {"$movemode" == "walk"} {nw}
+}
+#macro {\ei} 
+{
+#if {"$movemode" == "fly"} {8};
+#elseif {"$movemode" == "walk"} {n}
+}
+#macro {\eo} 
+{
+#if {"$movemode" == "fly"} {9};
+#elseif {"$movemode" == "walk"} {ne}
+}
+#macro {\ej} 
+{
+#if {"$movemode" == "fly"} {4};
+#elseif {"$movemode" == "walk"} {w}
+}
+#macro {\ek} 
+{
+#if {"$movemode" == "fly"} {5};
+#elseif {"$movemode" == "walk"} {o}
+}
+#macro {\el} 
+{
+#if {"$movemode" == "fly"} {6};
+#elseif {"$movemode" == "walk"} {e}
+}
+#macro {\em} 
+{
+#if {"$movemode" == "fly"} {1};
+#elseif {"$movemode" == "walk"} {sw}
+}
+#macro {\e,} 
+{
+#if {"$movemode" == "fly"} {2};
+#elseif {"$movemode" == "walk"} {s}
+}
+#macro {\e.} 
+{
+#if {"$movemode" == "fly"} {3};
+#elseif {"$movemode" == "walk"} {se}
+}
+#macro {\ep} 
+{
+#if {"$movemode" == "fly"} {+};
+#elseif {"$movemode" == "walk"} {u}
+}
+#macro {\e;} 
+{
+#if {"$movemode" == "fly"} {-};
+#elseif {"$movemode" == "walk"} {d}
+}
