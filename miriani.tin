@@ -65,7 +65,7 @@
 
 #EVENT {SESSION CONNECTED}
 {
-	PLAY play Music/starter*.wav;
+	PLAY Music/starter*.wav;
 	#nop {Set connected to true so if you accidently type login it won't try to login twice.};
 	#variable {connected} {true};
 	#nop {Create the log directory if it doesn't exist. Log files are based on date and time.};
