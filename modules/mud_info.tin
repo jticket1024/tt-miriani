@@ -1,0 +1,3 @@
+#VARIABLE         {mudAddress}  {toastsoft.net}
+#VARIABLE         {mudPort}  {1234}
+#VARIABLE         {mudSessionName}  {miriani}
