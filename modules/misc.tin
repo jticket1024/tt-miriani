@@ -2270,21 +2270,3 @@ PLAY General/Socials/cackle.wav
 #action {%*you carefully remove %* from your line%*} {PLAY fishcatch.wav  }
 
 #action {%*You suddenly feel a mighty tug on the end of your line.%*} {PLAY fishreel.wav }
-
-#NOP logging
-#macro {\eOS}
-{
-#if {"$logging" == "off"}
-{
-#format {logfile} {logs/%t.txt} {%Y-%m-%d};
-#log append $logfile;
-#variable {logging} {on};
-#showme {You are now logging.}
-};
-#elseif {"$logging" == "on"}
-{
-#log off;
-#variable {logging} {off};
-#showme {You are no longer logging.}
-}
-}
